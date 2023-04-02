@@ -28,3 +28,10 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.directional_sign {
+    position: fixed;
+    max-width: 10vmax;
+    right: 10px;
+    top: 40%;
+}
