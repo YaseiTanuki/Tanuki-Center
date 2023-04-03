@@ -1,9 +1,17 @@
-function change_next_direction() {
-    var elem = document.getElementById("direction").getElementsByClassName("next_button")[0];
-    if(elem.innerHTML === "Crime") {
-        elem.innerHTML = "Contact";
+document.addEventListener("DOMContentLoaded", function(event) {
+    function change_next_direction()
+    {
+    var x = document.getElementById("direction").getElementsByClassName("next_button")[0];
+    if(x.innerHTML == "Crime")
+    {
+        x.innerHTML = "Contact";
     }
-    else {
-        elem.innerHTML = "Crime";
+    else
+    {
+        x.innerHTML = "Crime";
+    };
     }
-}
+
+    var elem = (document.getElementById("direction").getElementsByClassName("next_button"))[0];
+    elem.addEventListener("click", change_next_direction);
+})
