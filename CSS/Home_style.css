@@ -28,34 +28,3 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-#direction {
-    position: fixed;
-    right: 10px;
-    top: 30vh;
-    width: 15vmin;
-    min-width: 200px;
-}
-
-#direction button {
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-#direction .next_button {
-    position: absolute;
-    font-size: 3vmin;
-    bottom: 45%;
-    left: 25%;
-    margin: 0;
-}
-
-#direction .next_button:hover {
-    color: red;
-    text-decoration: underline;
-}
-
-#direction .directional_sign {
-    width: 100%;
-}
