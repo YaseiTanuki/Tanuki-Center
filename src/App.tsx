@@ -1,11 +1,9 @@
 import './App.css'
-import {Background } from './background'
+import {WantedPoster} from './home/WantedPoster'
 function App() {
 
   return (
-    <div>
-      <Background/>
-    </div>
+      <WantedPoster/>
   )
 }
 
