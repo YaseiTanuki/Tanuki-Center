@@ -1,7 +1,15 @@
+//Components
+import SiteName from "../../components/SiteName/SiteName";
+
+//Styles
+import './Home.scss'
+
 const Home = () => {
     return (
         <>
-            <p>This is Homepage</p>
+            <div className="Home">
+                <SiteName/>
+            </div>
         </>
     )
 }
