@@ -1,10 +1,19 @@
+/*BEGIN IMPORT*/
+//Package
 import {NavLink} from 'react-router-dom'
-import './NavigationBar.scss'
 
+//Components
+import Logo from "../Logo/Logo";
+
+//Styles
+import './NavigationBar.scss'
+/*END IMPORT*/
 const NavigationBar = () => {
     return (
         <>
-            <nav className="NavigationBar">
+        <div className="NavigationBar">
+            <Logo/>
+            <nav className="NavigationLink">
                 <ul>
                     <li><NavLink to="/">Lobby</NavLink></li>
                     <li><NavLink to="/library">Library</NavLink></li>
@@ -12,6 +21,7 @@ const NavigationBar = () => {
                     <li><NavLink to="/support">Support</NavLink></li>
                 </ul>
             </nav>
+        </div>
         </>
     );
 }

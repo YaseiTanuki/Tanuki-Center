@@ -1,7 +1,11 @@
 .NavigationBar {
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 5em;
+    display: flex;
+    .NavigationLink {
+        ul {
+            padding-top: 1.3em;
+            list-style: none;
+            display: flex;
+            gap: 5em;
+        }
     }
 }
