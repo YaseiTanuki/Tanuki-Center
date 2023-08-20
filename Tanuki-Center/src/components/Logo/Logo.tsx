@@ -1,12 +1,10 @@
 //Styles
 import './Logo.scss'
+import BrightLogo from '../../assets/img/bright-logo.svg'
+import DarkLogo from '../../assets/img/logo.svg'
 
 const Logo = () => {
-    return (
-        <>
-            <img className="Logo" src="/img/logo.svg" alt="" />
-        </>
-    )
+    return [BrightLogo, DarkLogo]
 }
 
 export default Logo;
