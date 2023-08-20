@@ -1,9 +1,10 @@
 .NavigationBar {
     display: flex;
     box-sizing: border-box;
-    border: 2px solid red;
-    position: relative;
+    position: fixed;
     width: 100%;
+    background: rgba($color: #000000, $alpha: 0.0);
+    margin-left: 3rem;
     .NavLogo {
         max-width: 5rem;
     }
@@ -12,11 +13,15 @@
             padding-top: 1.3em;
             list-style: none;
             display: flex;
-            gap: 5em;
-        }
+            gap: 3rem;
+            font-weight: bold;
+            .white {
+                color: white;
+            }
 
-        a {
-            color: white;
+            .black {
+                color: black;
+            }
         }
     }
 }
