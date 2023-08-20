@@ -9,10 +9,11 @@ import Logo from "../Logo/Logo";
 import './NavigationBar.scss'
 /*END IMPORT*/
 const NavigationBar = () => {
+    const [BrightLogo, DarkLogo] = Logo();
     return (
         <>
         <div className="NavigationBar">
-            <Logo/>
+            <span><img className="NavLogo" src={BrightLogo} alt="" /></span>
             <nav className="NavigationLink">
                 <ul>
                     <li><NavLink to="/">Lobby</NavLink></li>

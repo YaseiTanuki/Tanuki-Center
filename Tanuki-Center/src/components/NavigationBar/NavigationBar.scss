@@ -1,11 +1,22 @@
 .NavigationBar {
     display: flex;
+    box-sizing: border-box;
+    border: 2px solid red;
+    position: relative;
+    width: 100%;
+    .NavLogo {
+        max-width: 5rem;
+    }
     .NavigationLink {
         ul {
             padding-top: 1.3em;
             list-style: none;
             display: flex;
             gap: 5em;
+        }
+
+        a {
+            color: white;
         }
     }
 }
