@@ -1,10 +1,17 @@
 .Home {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: white;
-
+    height: 2000px;
     .LobbyLogo {
-        width: 40%;
+        margin-top: 10rem;
+        width: 20vmax;
     }
+}
+
+.BrightBackground {
+    background-color: white;
+}
+
+.DarkBackground {
+    background-color: black;
 }
