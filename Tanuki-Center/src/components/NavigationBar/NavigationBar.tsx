@@ -15,8 +15,9 @@ const NavigationBar = () => {
 
     const ChangeColor = () => {
         if(window.scrollY < 720){
-            setTextColor("black")
-            return setCurrentLogo(BrightLogo);
+            // setTextColor("black")
+            // return setCurrentLogo(BrightLogo);
+            return;
         }
         setTextColor("white")
         setCurrentLogo(DarkLogo);
