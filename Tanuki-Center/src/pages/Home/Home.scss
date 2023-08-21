@@ -13,5 +13,9 @@
 }
 
 .DarkBackground {
-    background-color: black;
+    animation: FadeBackground-W-B 2s forwards;
+}
+
+@keyframes FadeBackground-W-B {
+    100% {background-color: black;}
 }

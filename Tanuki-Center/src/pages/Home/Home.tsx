@@ -8,13 +8,14 @@ import './Home.scss'
 const Home = () => { 
     const [BrightLogo, DarkLogo] = Logo();
     const [CurrentLogo, setCurrentLogo] = useState(BrightLogo);
-    const [BackgroundColor, setbackgroundColor] = useState("BrightBackground")
+    const [BackgroundColor, setbackgroundColor] = useState("")
 
 
     const ChangeColor = () => {
         if(window.scrollY < 720){
-            setbackgroundColor("BrightBackground")
-            return setCurrentLogo(BrightLogo);
+            // setbackgroundColor("BrightBackground")
+            // return setCurrentLogo(BrightLogo);
+            return;
         }
         setbackgroundColor("DarkBackground")
         setCurrentLogo(DarkLogo);
