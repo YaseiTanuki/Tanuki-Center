@@ -4,10 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
 import './index.scss';
 
+import { BackgroundContextProvider } from '../src/hooks/contexts/BackgroundContext'
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <BackgroundContextProvider>
+        <App />
+      </BackgroundContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )
