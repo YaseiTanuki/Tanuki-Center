@@ -10,6 +10,7 @@ import Home from "./pages/Home/Home";
 import Library from "./pages/Library/Library";
 import About from "./pages/About/About";
 import Support from "./pages/Support/Support";
+
 //styles
 import './App.scss';
 /*END IMPORT*/
@@ -29,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
