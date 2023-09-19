@@ -1,6 +1,11 @@
+//Package
+import { useEffect, useState, useContext } from "react";
+
 //Components
-import { useEffect, useState } from "react";
 import Logo from "../../components/Logo/Logo";
+
+//hooks
+import BackgroundContext from "../../hooks/contexts/BackgroundContext";
 
 //Styles
 import './Home.scss'
@@ -8,7 +13,7 @@ import './Home.scss'
 const Home = () => { 
     const [BrightLogo, DarkLogo] = Logo();
     const [CurrentLogo, setCurrentLogo] = useState(BrightLogo);
-    const [BackgroundColor, setbackgroundColor] = useState("")
+    const {BackgroundColor, setBackgroundColor} = useContext(BackgroundContext);
 
 
     const ChangeColor = () => {
@@ -17,7 +22,7 @@ const Home = () => {
             // return setCurrentLogo(BrightLogo);
             return;
         }
-        setbackgroundColor("DarkBackground")
+        setBackgroundColor(false)
         setCurrentLogo(DarkLogo);
     }
 
@@ -28,7 +33,7 @@ const Home = () => {
 
     return (
         <>
-            <div className={'Home' + ' ' + BackgroundColor}>
+            <div className={'Home' + ' ' + (BackgroundColor ? 'BrightBackground' : 'DarkBackground')}>
                 <span><img className="LobbyLogo" src={CurrentLogo} alt="" /></span>
             </div>
         </>
