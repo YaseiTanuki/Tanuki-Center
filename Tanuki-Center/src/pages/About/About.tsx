@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import BackgroundContext from "../../hooks/contexts/BackgroundContext";
 import './About.scss'
+import '../Home/Home.scss'
 
 const About = () => {
     const {BackgroundColor} = useContext(BackgroundContext);
@@ -13,7 +14,7 @@ const About = () => {
 
     return (
         <>
-        <div className={"About" + " " + ColorClass}>
+        <div className={"About" + " " + (BackgroundColor ? 'BrightBackground' : 'DarkBackground')}>
             <p>This is About</p>
         </div>
         </>
