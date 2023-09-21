@@ -5,12 +5,12 @@ type BackgoundContextType = {
     setBackgroundColor: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const iUserContextState = {
+const iBackgroundContextState = {
     BackgroundColor: null,
     setBackgroundColor: () => {}
 }
 
-const BackgroundContext = createContext<BackgoundContextType>(iUserContextState);
+const BackgroundContext = createContext<BackgoundContextType>(iBackgroundContextState);
 
 interface BackgoundContextProps {
     children: ReactNode
