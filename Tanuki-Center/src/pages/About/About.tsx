@@ -6,12 +6,6 @@ import '../Home/Home.scss'
 const About = () => {
     const {BackgroundColor} = useContext(BackgroundContext);
 
-    var ColorClass: string = "StaticWhite";
-    if(BackgroundColor)
-        ColorClass = "StaticWhite";
-    else
-        ColorClass = "StaticBlack"
-
     return (
         <>
         <div className={"About" + " " + (BackgroundColor ? 'BrightBackground' : 'DarkBackground')}>
