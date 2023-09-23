@@ -1,12 +1,12 @@
 import { createContext, useState, FunctionComponent, ReactNode } from "react"
 
 type BackgoundContextType = {
-    BackgroundColor: boolean | null,
-    setBackgroundColor: React.Dispatch<React.SetStateAction<boolean>>
+    BackgroundColor: string | undefined,
+    setBackgroundColor: React.Dispatch<React.SetStateAction<string>>
 }
 
 const iBackgroundContextState = {
-    BackgroundColor: null,
+    BackgroundColor: undefined,
     setBackgroundColor: () => {}
 }
 
@@ -17,7 +17,7 @@ interface BackgoundContextProps {
 }
 
 export const BackgroundContextProvider: FunctionComponent<BackgoundContextProps> = (Props) => {
-    const [BackgroundColor, setBackgroundColor] = useState(true);
+    const [BackgroundColor, setBackgroundColor] = useState('BrightBackground');
     return (
         <BackgroundContext.Provider value={{BackgroundColor, setBackgroundColor}}>
             {Props.children}
