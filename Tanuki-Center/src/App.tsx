@@ -19,13 +19,13 @@ function App() {
 
   return (
     <>
-    <NavigationBar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/library" element={<Library/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/support" element={<Support/>}/>
-      </Routes>
+      <NavigationBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/library" element={<Library/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/support" element={<Support/>}/>
+        </Routes>
     </>
   )
 }
