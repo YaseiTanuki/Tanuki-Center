@@ -18,11 +18,9 @@ const Home = () => {
 
     const ChangeColor = () => {
         if(window.scrollY < 720){
-            // setbackgroundColor("BrightBackground")
-            // return setCurrentLogo(BrightLogo);
             return;
         }
-        setBackgroundColor(false)
+        setBackgroundColor('DarkBackground')
         setCurrentLogo(DarkLogo);
     }
 
@@ -32,11 +30,11 @@ const Home = () => {
     )
 
     return (
-        <>
-            <div className={'Home' + ' ' + (BackgroundColor ? 'BrightBackground' : 'DarkBackground')}>
+        <div className="Home">
+            <div className={BackgroundColor}>
                 <span><img className="LobbyLogo" src={CurrentLogo} alt="" /></span>
             </div>
-        </>
+        </div>
     )
 }
 
