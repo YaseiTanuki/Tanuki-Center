@@ -1,5 +1,9 @@
 .Home {
     display: flex;
     justify-content: center;
-    height: 2000px;
+    .Top {
+        width: 100vw;
+        height: 1080px;
+        background-color: #fcf8e8;
+    }
 }
