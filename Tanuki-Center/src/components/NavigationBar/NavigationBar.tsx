@@ -15,7 +15,7 @@ const NavigationBar = () => {
     return (
         <>
         <div className="NavigationBar">
-            <span><img className="NavLogo" src={BrightLogo} alt="" /></span>
+            <span><img className="NavLogo" src={DarkLogo} alt="" /></span>
             <nav className="NavigationLink">
                 <ul>
                     <li><NavLink to="/">LOBBY</NavLink></li>
