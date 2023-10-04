@@ -1,9 +1,17 @@
 .Home {
     display: flex;
     justify-content: center;
+    background-color: #fcf8e8;
     .Top {
-        width: 100vw;
-        height: 1080px;
-        background-color: #fcf8e8;
+        margin:100px 10px 10px 10px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        .WantedPoster{
+            grid-column: 4 / 5;
+            grid-row: 2/4;
+            width: 100%;
+        }
     }
 }
