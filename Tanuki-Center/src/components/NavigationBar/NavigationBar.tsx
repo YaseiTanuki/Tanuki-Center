@@ -10,7 +10,7 @@ import './NavigationBar.scss'
 
 /*END IMPORT*/
 const NavigationBar = () => {
-    const [BrightLogo, DarkLogo] = Logo();
+    const [, DarkLogo] = Logo();
 
     return (
         <>
